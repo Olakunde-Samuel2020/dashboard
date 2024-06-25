@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    
+    padding: 0;
+    margin: 0;
+    background:#1a1919;
+    font: inter;
+    }
+    /* header */
+    .navbar{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:5px 40px 10px 40px;
+       
+    }
+    .navbar img{
+        width: 100px;
+    }
+    .navlinks{
+        display:flex;
+        margin:0 20px;
+        align-items: center;
+    }
+    .navlinks img {
+        width: 100px;
+    }
+    .navlinks a{
+        text-decoration:none;
+        margin:0 20px;
+        color: #34A853;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;     
+        font-weight: 600;
+        padding: 10px 20px;
+        border-radius: 100px;
+    }
+    .navlinks .Login{
+        border:1px solid#34A853;
+    }
+    .navlinks .Signin{
+        background-color:#34A853;        
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+    }
+        /* color-background */
+    body{
+        position:relative;
+    }
+    .back-colors{
+        display:flex;
+        opacity: 0.5;
+        z-index: 2;
+    }
+    .home-colors1{
+        position:absolute;
+        right: 0;
+        top: 180px;;
+        width: 1200px;
+        z-index: -2;
+    }
+    .home-colors2{
+        position:absolute;
+        left: 0;
+        top: 650px;
+        width: 250px;
+    }
+        /* hero */
+    .hero{
+       margin:220px 0;
+        text-align:center;
+        line-spacing:1px;
+        z-index: 2px;
+    }
+    .hero h3{
+        margin:10px 0;
+        color: #20F280;
+        font-family: "Abhaya Libre";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    .hero h5{
+        margin:5px 0;
+        color: rgba(255, 255, 255, 0.73);
+        font-family: "Abhaya Libre";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .hero .search{
+        cursor:text;
+        margin:5px 0;
+        width: 450px;
+        height: 49.119px;
+        border-radius: 100px;
+        padding: 10px 20px;
+    }
+    .hero .search::placeholder{
+        color: rgba(0, 108, 49, 0.39);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400; 
+      
+    }
+        /* student */
+    .student{
+        background: #0A0A0A;
+        text-align:center;
+        padding: 80px 0px 120px 0px;
+
+    }
+    .student h2{
+        color:#FFF;
+        font-family: "Abhaya Libre ExtraBold";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+    .student h4{
+        text-align: center;
+        color:  #FFF;
+        text-align: center;
+        font-family: "Abhaya Libre";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+    .flex{
+        display:flex;
+        align-items:center;
+        justify-content: center;
+    }
+    .info{
+        display:flex;
+    }
+    .flex div{
+        margin: 0 20px;
+    }
+    .flex div h1{
+        color:  #FFF;
+        font-family: Manrope;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: -30px;
+        padding: 0;
+    }
+    .flex div h6{
+        color: #FFF;
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        margin: top -30px;
+
+    }
+    .flex div p{
+        color: #FFF;
+        font-family: Manrope;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top:-25px;
+    }
+    .flex .flex-1 p{
+        border-radius: 12px;
+        background: #006C31;
+        padding: 5px 12px;
+    } 
+    .flex .flex-2 p{
+        border-radius: 12px;
+        background: #FB42F3;
+        padding: 5px 12px;
+    } 
+    .flex .flex-3 p{
+        border-radius: 12px;
+        background: #FB8442;
+        padding: 5px 12px;
+    } 
+        /* footer */
+    footer{
+        background-color: #000000;
+        font-family: Roboto;
+        padding: 50px 50px 30px 50px;
+    }
+    footer .info{
+        display: flex;
+        align-items:start;
+        justify-content: space-evenly;
+        
+    }
+    footer .info .address{
+        margin-top: -30px ;
+    }
+    footer .info .address img{
+        width: 150px;
+    }
+    footer .info .address p{
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    footer .info .list{
+        color: #FFF;
+        margin-top: -15px;
+    }
+    footer .info .list p{
+        text-align: center;
+
+    }
+    footer .info .list ul li{
+        list-style: none;
+        margin-left: -30px;
+        font-size: small;
+    }
+    footer a{
+        display:block;
+        background-color: #FFC400;
+        border-radius: 15px;
+        text-decoration: none;
+        color: #FFF;
+        padding: 10px 20px;
+    }
+    footer .contact{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    footer .get-started{
+        margin: 20px 0;
+    }
+    footer .handle{
+        display: flex;
+        align-items: center;
+    }
+    footer .handle img{
+        margin: 0 10px;
+    }
+    footer .copyright .text{
+        text-align: center;
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        padding: 50px 0 0px 0;
+        margin-bottom: -20px;
+    }

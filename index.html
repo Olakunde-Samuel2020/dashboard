@@ -3,254 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <link rel="stylesheet" href="/index/styles.css">
+    <title>Document</title>
 </head>
 <body>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #111111;
-    color: #ffffff;
-    font: inter;
-}
-        /* nav-bar */
-.nav-bar{
-    display: flex;
-    border-bottom: 0.5px solid #5e5e63;
-    background-color: #111111;   
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 50px 0 40px;
-}
- header .logo{
-    padding: 16px 2px 6.24px 0px;
-} 
-.logo img{
-    width: 150px;
-    flex-shrink: 0;
-
-}
-.nav-links{
-    display: flex;
-    align-items: center;
-    padding: 16px  7px;
-    
-    
-}
-.nav-links a{
-    background-color: #34A853 ;
-    text-decoration: none;
-    color: #ffffff;
-    border-radius: 30px;
-    padding:7px 30px ;
-    flex-shrink: 0;
-    margin: 0px 13px;
-    z-index: 1;
-}
-.nav-link{
-    width:30px;
-    margin: 0px 13px;
-}
-.user-profile, .drop-down{
-    margin-right: 0px;
-    padding-right: 0;
-    margin-left: 13px;
-    width:30px;
-}
-.drop-down{
-    margin-left:0;
-}
-        /* side-profile */
-.side-profile{
-    width: 300px;
-    height:120vh;
-    border-right: 0.5px solid #5e5e63;
-    background-color: #111111;
-    z-index: 1;
-}
-.intro{
-    display: flex;
-    align-items: center;
-     padding:30px 0 10px 20px ;
-   
-}
-.side-profile-logo{
-    width: 70px;
-}
-.intro-name{
-    line-height: 1px;
-    margin: 0px 10px;
-    margin-top: 5px;
-}
-.intro-name h3{
-    letter-spacing: 2px;
-    padding-bottom:0 ;
-    margin-bottom: 0;
-}
-.intro-name h5{
-    color: #34A853;
-}
-.flex{
-    display: flex;
-    justify-content: space-evenly;
-}
-.centralized{
-    line-height: 1px;
-    text-align: center;
-    font-weight: 400;
-}
-.sub{
-    color: #5e5e63;
-    padding-bottom:0 ;
-    margin-bottom: 50px;
-}
-
-    /* link-list */
-.link-list{
-    padding: 0 30px;
-}
-.link-list div a{
-    margin: 10px 30px;
-    color: #ffffff;
-    text-decoration: none;
-}
-.home , .library , .course , .book , .past-question {
-    display: flex;
-    align-items: center;
-    
-  
-}
-.link-list .course{
-    margin: 0px -3px;
-   
-}
-.link-list .library a{
-    margin: 0px 70px 0 30px;
-}
-.link-list .course a{
-    margin: 10px 62px 10px 25px;
-}
-.link-list .book a{
-    margin: 0px 70px 0 30px;
-}
-.link-list .past-question a{
-    margin: 10px 12px 10 25px;
-}
-.link-list div:hover{
-    background-color: #34a85360;
-    padding: 5px 15px;
-    border-radius: 15px;
-    margin-bottom: 10px;
-}
-.link-list div:active{
- background-color: #34a85360;
- padding: 5px 15px;
- border-radius: 15px;
- margin-bottom: 10px;
-}
-.link-list .past-question:active{
-    background-color: #34a85360;
-    padding: 5px 15px;
-    border-radius: 15px;
-    margin-top: 10px;
-   }
-   .link-list .past-question:hover{
-    background-color: #34a85360;
-    padding: 5px 15px;
-    border-radius: 15px;
-    margin-top: 10px;
-   }
-    /* colorful addition to the background */
-body{
-    position: relative;
-}
-.background1{
-    position: absolute;
-    width: 400px;
-    top: 200px;;
-    right: 0;
-}
-.background3{
-   z-index:-2 ;
-    position: absolute;
-    width: 400px;
-    top: 650px;;
-    left: 0;
-}
-
-
-    </style>
-    <header class="nav-bar">
-        <div class="logo">
-        <a href="#"><img src="/asset/logo.png"  alt=""></a>
-        </div>
-        <nav class="nav-links">
-            <a href="#">Admin</a>
-            <img src="/asset/notif.png" alt="" class="notif nav-link">
-            <img src="/asset/message.png" alt="" class="message nav-link">
-            <img src="/asset/user-profile.png" alt="" class="user-profile ">
-            <img src="/asset/drop-down.png" alt="" class="drop-down ">
-           
+    <header class="navbar">
+        <img src="/asset/logo.png" class="logo" alt="">
+        <nav class="navlinks">
+            <a href="" class="Login">Login</a>
+            <a href="" class="Signin">Signin</a>
+            <img src="/asset/country.png" class="country" alt="">
+            <img src="/asset/menu.png" class="menu" alt="">
         </nav>
     </header>
     <main>
-        <section class="side-profile">
-            <div class="intro">
-                <img src="/asset/user-profile.png" alt="" class="side-profile-logo">
-                <div class="intro-name">
-                    <h1>Eri Guy</h3>
-                    <h5><small> Leadcity University </small></h5>
-                </div>
-            </div>
-            <div class="flex">
-                <div class="centralized">
-                    <h3 class="num num1">45</h3>
-                    <h6 class="sub sub1">Followers</h6>
-                </div>
-                <div class="centralized">
-                    <h3 class="num num2">7</h3>
-                    <h6 class="sub sub1">Upload</h6>
-                </div>
-                <div class="centralized">
-                    <h3 class="num num3">8</h3>
-                    <h6 class="sub sub1">Upvotes</h6>
-                </div>
-            </div>
-
-            <div class="link-list">
-                <div class="home">
-                    <img src="/asset/home.png" alt="" class="list-logo list-logo-1">
-                    <a href="home.html" class="link1">Home</a>
-                </div>
-                <div class="library">
-                    <img src="/asset/library.png" alt="" class="list-logo list-logo-1">
-                    <a href="library.html"> My library</a>
-                    <img src="/asset/drop-down.png" alt="" class="list-dropdown list-dropdown-1">
-                </div>
-                <div class="course">
-                    <img src="/asset/file.png" alt="" class="list-logo list-logo-1">
-                    <a href="#">Course</a>
-                    <img src="/asset/drop-down.png" alt="" class="list-dropdown list-dropdown-1">
-                </div>
-                <div class="book">
-                    <img src="/asset/bookmark.png" alt="" class="list-logo list-logo-1">
-                    <a href="#">Book</a>
-                    <img src="/asset/drop-down.png" alt="" class="list-dropdown list-dropdown-1">
-                </div>
-                <div class="past-question">
-                    <img src="/asset/copy.png" alt="" class="list-logo list-logo-1">
-                    <a href="#">Past - Question</a>
-                    <img src="/asset/drop-down.png" alt="" class="list-dropdown list-dropdown-1">
-                </div>
-            </div>
+        <section class="hero">
+            <h3>Fedral university Oye-Ekiti</h3>
+            <h5>Innovation & Character For National Transformation</h5>
+            
+                <input type="text" placeholder="&#xf002; search for course, books, past-question etc..." class="search">
         </section>
-        <section class="main-side-background">
-            <img src="/asset/background1.png" alt="" class="background1">
-            <img src="/asset/background3.png" alt="" class="background3">
+        <section class="back-colors">
+            <img src="/asset/home-colors1.png" class="home-colors1"  alt="">
+            <img src="/asset/home-colors2.png"  class="home-colors2" alt="">
+        </section>
+        <section class="student">
+            <h2>700M students saved, and counting</h2>
+            <h4>50K new study notes added every day, from the world’s most 
+                <br> active student communities</h4>
+            <div class="flex">
+                <div class="flex-1">
+                    <h1>35m</h1>
+                    <h6>Study Resources</h6>
+                    <p>1 new each second</p>
+                </div>
+                <div class="flex-2" >
+                    <h1>25k</h1>
+                    <h6>Study Resources</h6>
+                    <p>1 each second</p>
+                </div>
+                <div class="flex-3">
+                    <h1>15K</h1>
+                    <h6>Users</h6>
+                    <p>Every Month</p>
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <div class="info">
+            <div class="address">
+                <img src="/asset/white-logo.png" alt="" class="address-icon">
+                <p>No 3,Anywhere street,Somewhere ,Nigeria</p>
+            </div>
+            <div class="list">
+                <p>Company</p>
+                <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>FAQs</li>
+                    <li>Teams</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="link">
+                <a href="#" class="Contact">Contact Us</a>
+                <a href="#" class="get-started">Get started</a>
+            </div>
+            <div class="handle handle1">
+                <img src="/asset/social.png" alt="">
+                <img src="/asset/social (1).png" alt="">
+                <img src="/asset/social(4).png" alt="">
+            </div>
+            <div class="handle handle2">
+                <img src="/asset/social (2).png" alt="">
+                <img src="/asset/social (3).png" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="text">&copy; BRIOLEAYS DEALINGS</p>
+        </div>
+    </footer>
 </body>
 </html>
