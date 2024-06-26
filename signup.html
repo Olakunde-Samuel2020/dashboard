@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+ 
+      
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      
+        body{
+            padding: 0;
+            margin: 0;
+            background:#1a1919;
+        }
+        form{
+            padding: 30px 70px;
+            width: 500px;
+            background-color:black ;
+            align-items: center;
+            margin: 0px auto;
+        }
+        form .createAcc{
+            color:  #FAFAFA;
+            /* heading */
+            font-family: Poppins;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+
+        }
+      
+        form .input{
+            display: block;
+            color: white;
+        }
+        form .input label{
+            color:  #D1D1D6;
+            /* body/large/regular */
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%; /* 16px */
+          
+          
+        }
+        form .input input{
+            width: 490px;
+            height: 50px;
+            border-radius: 18px;
+            background-color: transparent;
+            border: 1px solid #70707B;
+            color: var(--foreground-default, #D1D1D6);
+            /* body/medium/regular */
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 20px 0 30px 0;
+
+        }
+        form .input input:focus{
+            border: 2px solid #34A853;
+        }
+        form .input input::placeholder{
+            padding: 10px 30px;
+
+        }
+        form .button{
+            
+        }
+        form .button div{
+            margin: 15px 0;
+            width: 500px;
+            text-align: center;
+            background-color:#34A853 ;
+            border-radius: 8px;
+            padding: 15px 0 15px 0;
+            
+        }
+        form .button div a{
+            text-decoration:none;
+            color: #FCFCFC;
+            /* body/large/semibold */
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%; /* 16px */
+        }
+        form .button .flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration:none;
+            width: 500px;
+            border-radius: 8px;
+            background: rgba(52, 168, 83, 0.15);
+        }
+        form .button .flex p{
+            color: #34A853;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+
+        }
+        form .button .flex .google{
+            width: 30px;
+            color: #34A853;
+          
+        }
+          /* body/large/semibold */
+        
+        form .else{
+            text-align: center;
+            color: var(--foreground-low, #70707B);
+            /* body/large/regular */
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+        form .else a{
+            text-decoration: none;
+            color: var(--foreground-primary, #A0A0AB);
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+    </style>
+    <form action="">
+            <h3 class="createAcc">Create an account</h3>
+            <section class="input">
+                <label for="email">Email</label><br>
+                <input type="email" name="" id="email" placeholder="Enter your email"><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="" id="password" placeholder="Entar your password">  
+            </section>     
+            <section class="button">
+                <div><a href="/login.html" class="create">Create Account</a></div>
+                
+                <a href="/landing.html" class="flex">
+                    <img src="/asset/google.png" alt="" class="google">
+                    <p>Continue with Google</p>
+                </a>
+            </section>
+            <section class="else">
+                <p>Already have an account ? <a href="/login.html">Log in</a></p>
+            </section> 
+    </form>
+</body>
+</html>
