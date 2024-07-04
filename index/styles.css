@@ -27,7 +27,7 @@ body{
         align-items: center;
     }
     .navlinks img {
-        width: 100px;
+        width: 50px;
     }
     .navlinks a{
         text-decoration:none;
@@ -58,7 +58,7 @@ body{
     .back-colors{
         display:flex;
         opacity: 0.5;
-        z-index: 2;
+        
     }
     .home-colors1{
         position:absolute;
@@ -72,6 +72,7 @@ body{
         left: 0;
         top: 650px;
         width: 250px;
+        z-index: 2;
     }
         /* hero */
     .hero{
@@ -97,6 +98,7 @@ body{
         font-weight: 400;
     }
     .hero .search{
+      
         cursor:text;
         margin:5px 0;
         width: 450px;
@@ -261,3 +263,80 @@ body{
         padding: 50px 0 0px 0;
         margin-bottom: -20px;
     }
+    @media (min-width:320px)and (max-width:768px) {
+        header .navlinks a,header .navlinks .country{
+            display: none;
+        }
+        header .navlinks .menu{
+            width: 50px;
+        }
+        .hero{
+            margin:110px 0;
+            z-index: 2;
+         }
+         .hero h3{
+             margin:10px 0;
+             font-size: 25px;
+         }
+         .hero h5{
+             margin:5px 0;
+             font-size: 15px;
+         }
+         .hero .search{
+           
+             cursor:text;
+             margin:5px 0;
+             width: 300px;
+             height: 29.119px;
+             border-radius: 100px;
+             background-color: white;
+             /* padding: 5px 10px; */
+         }
+         .hero .search::placeholder{
+             color: rgba(0, 108, 49, 0.39);
+             font-size: 12px;
+         }
+         .home-colors1{
+            position:absolute;
+            right: 0;
+            top: 120px;
+            width: 700px;
+        }
+        .home-colors2{
+            position:absolute;
+            left: 0;
+            top: 450px;
+            width: 250px;
+            z-index: 2;
+        }
+        .student{
+            z-index: -2;
+            padding: 50px 0px 90px 0px;
+    
+        }
+        .student h2{
+         
+            font-size: 30px;
+           
+        }
+        .student h4{
+          
+            font-size: 20px;
+           
+    }
+    footer .info{
+        display: block;
+        align-items:start;
+        justify-content: space-evenly;
+
+        
+    }
+    footer .info div{
+        margin: 40px 0;
+    }
+    footer .info .list p{
+        text-align: center;
+        width:80px;
+
+    }
+}
